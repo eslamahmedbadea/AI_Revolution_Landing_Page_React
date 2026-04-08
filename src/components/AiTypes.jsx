@@ -1,0 +1,273 @@
+// Tag colors map
+const tagColors = {
+  primary: "bg-primary/10 text-primary",
+  secondary: "bg-secondary/10 text-secondary",
+  accent: "bg-accent/10 text-accent",
+};
+
+// AI Types Content
+const aiTypes = [
+  // Type 1 Card
+  {
+    title: "Machine Learning",
+
+    description:
+      "Systems that learn and improve from experience without being explicitly programmed.",
+
+    image:
+      "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Predictive", color: "primary" },
+      { text: "Adaptive", color: "secondary" },
+    ],
+  },
+
+  // Type 2 Card
+  {
+    title: "Neural Networks",
+
+    description:
+      "Biologically inspired networks that simulate human brain functions for pattern recognition.",
+
+    image:
+      "https://images.unsplash.com/photo-1645839057098-5ea8761a6b09?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Deep Learning", color: "primary" },
+      { text: "Complex Data", color: "accent" },
+    ],
+  },
+
+  // Type 3 Card
+  {
+    title: "Natural Language Processing",
+
+    description:
+      "Enabling machines to understand, interpret, and generate human language naturally.",
+
+    image:
+      "https://plus.unsplash.com/premium_photo-1733317429945-a3688f50430b?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Chatbots", color: "secondary" },
+      { text: "Translation", color: "accent" },
+    ],
+  },
+
+  // Type 4 Card
+  {
+    title: "Deep Learning",
+
+    description:
+      "A subset of machine learning based on artificial neural networks with multiple layers.",
+
+    image:
+      "https://images.unsplash.com/photo-1495592822108-9e6261896da8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Vision", color: "primary" },
+      { text: "Speech", color: "accent" },
+    ],
+  },
+
+  // Type 5 Card
+  {
+    title: "Computer Vision",
+
+    description:
+      "Enabling machines to interpret and make decisions based on visual data from the world.",
+
+    image:
+      "https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Image Recognition", color: "primary" },
+      { text: "Detection", color: "secondary" },
+    ],
+  },
+
+  // Type 6 Card
+  {
+    title: "Reinforcement Learning",
+
+    description:
+      "Training agents to make decisions by rewarding desired behaviors and penalizing undesired ones.",
+
+    image:
+      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=2032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
+      </svg>
+    ),
+
+    tags: [
+      { text: "Robotics", color: "secondary" },
+      { text: "Gaming", color: "accent" },
+    ],
+  },
+];
+
+function AiTypes() {
+  return (
+    <section id="types" className="app-container py-16 cursor-pointer">
+      {/* Section Title & Content */}
+      <div className="text-center mb-12">
+        <span className="section-subheader">AI Technologies</span>
+        <h2 className="section-header">
+          Different Types of{"  "}
+          <span className="gradient-text">Artificial Intelligence</span>
+        </h2>
+        <p className="section-description">
+          Explore the diverse landscape of AI technologies that are shaping our
+          future.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Loop over aiTypes array, one card per item */}
+        {aiTypes.map((type) => (
+          <article key={type.title} className="ai-type-card">
+            {/* Card image */}
+            <img
+              src={type.image}
+              alt={type.title}
+              className="ai-type-card-image"
+            />
+
+            <div className="p-6">
+              {/* Icon */}
+              <div className="flex items-center mb-3">
+                <div className="ai-type-card-icon">{type.icon}</div>
+              </div>
+
+              {/* Title */}
+              <h3 className="text-xl font-bold">{type.title}</h3>
+
+              {/* Description */}
+              <p className="mt-2 text-gray-600">{type.description}</p>
+
+              {/* Tags — loop over each tag in this card */}
+              <div className="mt-4 flex items-center gap-x-2">
+                {type.tags.map((tag) => (
+                  <span
+                    key={tag.text}
+                    className={`ai-type-card-tag ${tagColors[tag.color]}`}
+                  >
+                    {tag.text}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default AiTypes;

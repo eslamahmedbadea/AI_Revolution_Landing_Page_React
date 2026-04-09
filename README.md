@@ -89,3 +89,4 @@ Feel free to connect or reach out for feedback or collaboration.
 ## ⭐ Final Note
 
 This project is part of my journey in becoming a professional **Frontend Developer**, and more advanced projects are coming soon 🚀
+This project is based on a tutorial by [Triangles - مثلثات]

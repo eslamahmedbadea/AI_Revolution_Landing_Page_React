@@ -27,9 +27,9 @@ The main goal was to:
 
 ## 🛠️ Tech Stack
 
-- **React.js**
-- **Tailwind CSS**
-- **Vite**
+- React.js
+- Tailwind CSS
+- Vite
 
 ---
 
